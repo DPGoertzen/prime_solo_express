@@ -1,0 +1,14 @@
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.balancer {
+  background-color: #C5E3BF;
+  color: #722f37;
+  border-radius: 10%;
+  border: 2px solid #596C56;
+}
+
+.container {
+  font-family: 'Suez One', serif;
+}
