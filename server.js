@@ -4,6 +4,14 @@ var express = require('express');
 var mod3 = require('./modules/mod3.js');
 var app = express();
 
+var port;
+if(process.env.PORT){
+  port = process.env.PORT
+} else {
+  port = 3000
+}
+
+
 var balanceObject = {};
 
 app.get('/balance', function (req, res) {
@@ -17,7 +25,7 @@ app.get('/balance', function (req, res) {
 app.use(express.static('public'));
 
 
-var server = app.listen(3000, function () {
+var server = app.listen(port, function () {
   var port = server.address().port;
   console.log('listening on', port);
 });
